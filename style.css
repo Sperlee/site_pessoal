@@ -1,50 +1,114 @@
+:root {
+    --cor-fundo: rgb(0, 110, 255);
+    --cor-principal: rgb(9, 17, 32);
+    --cor-destaque: rgb(47, 109, 190);
+    --cor-destaque-transparente: rgba(47, 109, 190, 0.836);
+    --cor-texto: white;
+    --cor-sombra: rgba(0, 0, 0, 0.445);
+}
+
 html {
     scroll-behavior: smooth;
 }
-
 a,
 a:visited,
 a:hover,
 a:active {
-    color: white;
+    color: var(--cor-texto);
     text-decoration: none;
 }
-
-h3{
-    color: white;
+h1{
+    color: var(--cor-texto);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
+h2{
+    color: var(--cor-texto);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h3{
+    color: var(--cor-texto);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 body {
     margin: 0;
     padding: 0;
 }
-
-
-
+p{
+    color: var(--cor-texto);
+}
 .corpo{
-    background-color: rgb(40, 68, 85);
+    background-color: var(--cor-fundo);
 }
 
+
+/*cabeçalho*/
 .cabecalho {
     display: flex;
     justify-content: space-between;
     padding: 10px 40px;
-    background-color:rgb(9, 17, 32) ;
+    background-color: var(--cor-principal);
+    box-shadow: 10px 5px var(--cor-sombra);
 }
-
 .cabecalho nav {
     display: flex;
     gap: 20px;
+    border-radius: 30px;
 }
-
 .navegar{
-    background-color:rgba(61, 78, 110, 0.116);
+    background-color: var(--cor-destaque-transparente);
     border-radius: 20px;
     padding: 10px;
     margin: 10px;
+    box-shadow: 10px 5px var(--cor-sombra);
 }
+/*-----fim cabeçalho------*/
 
+
+/*apresentação*/
 .apresentação {
-    
+    padding: 10px 100px 10px 40px;
+    margin-top: 1px;
+    background-color: var(--cor-principal);
+}
+.apresentação h3:first-child {
+    margin-top: 0;
+}
+.nome {
+    display: flex;
+    margin: 0;
+}
+.nome h1 {
+    margin: 0;
+}
+.sperle{
+    color: var(--cor-destaque);
+}
+.botao{
+    background-color: var(--cor-destaque-transparente);
+    color: var(--cor-texto);
+    border: 0px;
+    font-size: 20px;
+    padding: 16px 32px;
+    border-radius: 30px;
+    box-shadow: 10px 5px var(--cor-sombra);
+}
+.ic_download{
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    vertical-align: middle;
+    filter: brightness(0) invert(1);
+}
+/*-----fim apresentação------*/
+
+
+/*sobre*/
+.sobre{
+    padding: 10px 100px 10px 40px;
+    margin-top: 1px;
+    background-color: var(--cor-principal);
+
+}
+.sobre h3:first-child {
+    margin-top: 0;
 }
